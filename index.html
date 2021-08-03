@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeQuiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="login" id="login">
+      <form>
+        <h1>Welcome</h1>
+        <p>PokeQuiz 1.0</p>
+        <p class="by">By: Irens</p>
+        <label>Username</label>
+        <input type="text" id="user">
+        <label>Password</label>
+        <input type="password" id="pass">
+        <p class="salah" id="salah"></p>
+        <button type="button" onclick="Clogin()">Login</button>
+      </form>
+  </div>
+  
+  <div class="quiz" id="quiz">
+    <div class="soal" id="soal"></div>
+    <div class="jawaban">
+
+      <input type="radio" id="jA" name="soal" value="a" onclick="jawaban(this.value);">
+      <label for="jA" id="a"></label>
+      <input type="radio" id="jB" name="soal" value="b" onclick="jawaban(this.value);">
+      <label for="jB" id="b"></label>
+      <input type="radio" id="jC" name="soal" value="c" onclick="jawaban(this.value);">
+      <label for="jC" id="c"></label>
+      <input type="radio" id="jD" name="soal" value="d" onclick="jawaban(this.value);">
+      <label for="jD" id="d"></label>
+      
+    </div>
+
+    <button class="submit" onclick="submit()" id="submit">Submit</button>
+    <button class="next" onclick="next()" id="next">Next</button>
+    <button class="finish" onclick="finish()" id="finish">Finish</button>
+  </div>
+
+  <div class="ScorePanel" id="Spanel">
+    <p class="scoreH">Selamat, kamu telah menyelesaikan <span>PokeQuiz 1.0</span></p>
+    <div class="spage">
+
+      <div class="scoreB">
+        <li>
+          <p class="angkaS" id="Jbenar"></p>
+          <p>Jawaban benar</p>
+        </li>
+      </div>
+      <div class="scoreB">
+        <li>
+          <p class="angkaS" id="Jsalah"></p>
+          <p>Jawaban salah</p>
+        </li>
+      </div>
+      <div class="scoreB">
+        <li>
+          <p class="angkaS" id="totalS"></p>
+          <p>Buah soal</p>
+        </li>
+      </div>
+
+      <li class="scoreP">
+        <p class="angkaS2" id="persentase"></p>
+        <p>Persentase jawaban benar</p>
+      </li>
+
+    </div>
+
+    <div class="komentar">
+      <p id="komentar"></p>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

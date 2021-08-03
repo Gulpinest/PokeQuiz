@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+.container {
+
+}
+
+/*----------------------------- Login --------------------------------*/
+
+.login {
+    display: block;
+}
+
+.login form{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 10px 10px 15px rgb(27, 27, 27);
+    border-radius: 10px;
+}
+
+.login h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 34px;
+}
+
+.login p {
+    color: rgb(88, 131, 211);
+    text-align: center;
+    font-size: 12px;
+}
+    .login .salah {
+        color: rgb(167, 50, 50);
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .by {
+        color: rgb(88, 131, 211);
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 14px;
+        position: absolute;
+        top: 25px;
+        left: -15px;
+        transform: rotate(-90deg);
+        text-shadow: rgb(26, 26, 26) 3px 3px 3px;
+    }
+
+.login input {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    padding: 12px 10px;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+
+    .login input:focus {
+        outline: 1px solid rgb(89, 134, 185);
+    }
+
+.login label {
+    color: rgb(150, 150, 150);
+    display: block;
+    padding-bottom: 10px;
+}
+
+.login button {
+    width: 100%;
+    background-color: rgb(63, 111, 199);
+    color: whitesmoke;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: rgb(37, 37, 37) 5px 5px 5px;
+}
+
+.login button:active {
+    background-color: rgb(48, 83, 148);
+    box-shadow: none;
+}
+
+/*--------------------------- End of Login ------------------------------*/
+
+.quiz {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 30px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 720px;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 10px 10px 15px rgb(27, 27, 27);
+    display: none;
+    border-radius: 10px;
+}
+
+.quiz {
+    color: whitesmoke;
+    font-size: 18px;
+}
+    .quiz label {
+        display: block;
+        padding: 10px;
+        background-color: rgb(70, 70, 70);
+        box-shadow: rgb(39, 39, 39) 5px 5px 5px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        padding-left: 20px;
+        transition: 0.3s;
+    }
+
+    .quiz input {
+        opacity: 0;
+        position: absolute;
+    }
+    
+   .quiz input:checked + label {
+        background-color: rgb(63, 111, 199);
+    }
+    
+.quiz .soal {
+    margin-bottom: 25px;
+}
+
+.quiz .jawaban {
+    margin-bottom: 25px;
+}
+
+.quiz button {
+    padding: 10px;
+    background-color: rgb(63, 111, 199);
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 10%;
+    box-shadow: 5px 5px 3px rgb(46, 46, 46);
+}
+    .quiz .next {
+        float: right;
+    }
+
+    .quiz .finish {
+        display: none;
+        float: right;
+    }
+
+    .quiz button:active {
+        background-color: rgb(48, 83, 148);
+    }
+
+/* -------------------------------- Scoring ---------------------------------------------- */
+
+.ScorePanel {
+    position: absolute;
+    box-sizing: border-box;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 10px 10px 15px rgb(27, 27, 27);
+    border-radius: 10px;
+    color: whitesmoke;
+    width: 620px;
+    text-align: center;
+    display: none;
+}
+    .spage {
+        background-color: rgb(83, 83, 83);
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 10px;
+        padding-bottom: 40px;
+    }   
+
+        .scoreB {
+            display: inline-block;
+            width: 100px;
+            padding: 20px;
+        }
+
+        .spage li {
+            text-align: center;
+        }
+            .spage .angkaS {
+                font-size: 30px;
+            }
+
+    .scoreH {
+        padding: 20px;
+        font-size: 24px;
+        text-align: center;
+    }
+        .scoreH span {
+            color: rgb(88, 131, 211);
+            font-weight: bold;
+        }
+    
+.scoreP {
+    font-size: 24px;
+    margin-top: 20px;
+}
+    .scoreP .angkaS2 {
+        font-size: 72px;
+    }
+
+.komentar {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
