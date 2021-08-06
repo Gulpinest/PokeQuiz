@@ -234,4 +234,8 @@ body {
     .login form {
         width: 90%;
     }
+    
+    .quiz {
+        width: 90%;
+    }
 }
