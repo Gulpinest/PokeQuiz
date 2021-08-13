@@ -193,3 +193,9 @@ function discolor() {
         document.getElementById(z[i]).style.backgroundColor = null;      
     }
 }
+
+function eB() {
+    if (window.event.keyCode == 13) {
+        document.getElementById("enterB").click();
+    }
+}
